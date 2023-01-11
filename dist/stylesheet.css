@@ -1,0 +1,153 @@
+:root {
+    --font-fam: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; ;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+  }
+   /*Element selector that sets the background to a default color in case of loading errors. */
+  body {
+    background-size: cover;
+    background-color: rgb(236, 241, 245);
+  }
+  
+  .header {
+    display: center;
+    padding: 20px;
+    text-align:center;
+    font-family: var(--font-fam);
+    background-color: #131f25;
+    position: sticky;
+    top: 0; 
+    background-size: cover;
+    background-position: 100%;
+    width: 100%;
+    height: 100px;
+  }
+  
+  .header h1 {
+    display: flex;
+    font-size: 60px;
+    position: sticky;
+    top: 0;
+  }
+    
+  a {
+    color: #0b0a0a;
+    text-decoration: none;
+  }
+  
+  li {
+    font-size: 22px;
+  }
+  
+  /*https://alvarotrigo.com/blog/css-text-animations/ */
+  .title-word {
+    animation: color-animation 4s linear infinite;
+  }
+  
+  .title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+  }
+  
+  .title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+  }
+
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+  
+ 
+  
+  .container {
+    display: grid;
+    background-color: #abd4c3;
+    background-size: cover;
+    place-items: center;  
+    text-align: center;
+    height: 100vh
+  }
+  
+  .title {
+    font-family: "Monospace", sans-serif;
+    font-weight: 800;
+    font-size: 8.5vw;
+    text-transform: uppercase;
+  }
+  
+   .title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+  }
+  
+  .title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+  } 
+  
+  
+  /* main */
+  /* Sets the grid styling https://www.w3schools.com/css/tryit.asp?filename=trycss_grid */
+  .container {
+    display: grid;
+    grid-gap: 10px;
+    grid: auto-fill;
+    grid-template-columns: repeat(auto-fill, minmax(192px, 300px));
+    padding: 10px;
+    flex: 0 0 800px;
+  }
+
+  .card-employee {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 60px 70px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    /* border-color: #17494D; */
+    background-color: #2196F3;
+    padding: 40px;
+  }
+
+  /* https://www.w3schools.com/howto/howto_css_cards.asp */
+  /* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-width: 20px;
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+  
+  .card-body{
+    flex: 2;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 16px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Resonsive Design 
+  /* This is for Tablet sizes*/
+  @media screen and (max-width: 996px) {
+    .header nav {
+    font-size: 10px; 
+    }
+  } 
