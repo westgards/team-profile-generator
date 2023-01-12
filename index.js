@@ -7,7 +7,7 @@ const inquirer = require('inquirer');
 // Internal modules
 // This creates the readme html structure template
 const classes = require('./lib/classes.js');
-// const teamInfo = require('./team_info.json');
+
 
 // TODO: Create an array of questions for user input
 // Installation, Usage 
