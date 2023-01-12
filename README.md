@@ -31,12 +31,12 @@ On a Mac, while in your project install
 
 `$node index.js`
 
-#TODO
-![demo image]()
+
+![demo image](./dist/assets/team-generator-pic.png)
 
 
 ## Features
-- Node.js CLI tool to generate a HTML webpage that displays information about a software engineering team 
+- Node.js CLI tool to generate a HTML webpage that displays user supplied information about a software engineering team 
 - Customizable HTML template for more features
 - Robust testing to allow for high code maintainability
 
